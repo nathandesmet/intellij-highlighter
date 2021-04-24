@@ -1,0 +1,17 @@
+<idea-plugin>
+  <id>be.nathandesmet.intellijhighlighter</id>
+  <name>BetterSyntaxHighlighter</name>
+  <version>0.1</version>
+  <vendor>Nathan Desmet</vendor>
+
+  <description>this plugin will highlight all lines contains a method declaration (including constructors)</description>
+
+  <idea-version since-build="173.0"/>
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.modules.java</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <annotator language="JAVA" implementationClass="be.nathandesmet.intellijhighlighter.MethodSignatureHighlighter"/>
+  </extensions>
+
+</idea-plugin>
